@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04D5E21A1A4408050085867B /* NSMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5E2191A4408050085867B /* NSMainWindowController.m */; };
+		04D5E21F1A441B240085867B /* ZFBaseWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5E21E1A441B240085867B /* ZFBaseWebController.m */; };
 		04FD91F01A42780300951BC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD91EF1A42780300951BC5 /* AppDelegate.m */; };
 		04FD91F21A42780300951BC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD91F11A42780300951BC5 /* main.m */; };
 		04FD91F51A42780300951BC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD91F41A42780300951BC5 /* ViewController.m */; };
@@ -41,6 +42,8 @@
 		04D5E2131A43D25C0085867B /* Ice-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ice-Prefix.pch"; sourceTree = "<group>"; };
 		04D5E2181A4408050085867B /* NSMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMainWindowController.h; sourceTree = "<group>"; };
 		04D5E2191A4408050085867B /* NSMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMainWindowController.m; sourceTree = "<group>"; };
+		04D5E21D1A441B240085867B /* ZFBaseWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBaseWebController.h; sourceTree = "<group>"; };
+		04D5E21E1A441B240085867B /* ZFBaseWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBaseWebController.m; sourceTree = "<group>"; };
 		04FD91E91A42780300951BC5 /* mac1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mac1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FD91ED1A42780300951BC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04FD91EE1A42780300951BC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +109,15 @@
 			name = VC;
 			sourceTree = "<group>";
 		};
+		04D5E21C1A441B040085867B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				04D5E21D1A441B240085867B /* ZFBaseWebController.h */,
+				04D5E21E1A441B240085867B /* ZFBaseWebController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		04FD91E01A42780300951BC5 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +144,7 @@
 		04FD91EB1A42780300951BC5 /* mac1 */ = {
 			isa = PBXGroup;
 			children = (
+				04D5E21C1A441B040085867B /* Base */,
 				04D5E2171A4407A00085867B /* VC */,
 				04FD922A1A42C25B00951BC5 /* statusbar */,
 				04FD91EE1A42780300951BC5 /* AppDelegate.h */,
@@ -294,6 +307,7 @@
 				04FD91F51A42780300951BC5 /* ViewController.m in Sources */,
 				04FD91F21A42780300951BC5 /* main.m in Sources */,
 				04FD92331A42E4F300951BC5 /* StatusBarWindow.m in Sources */,
+				04D5E21F1A441B240085867B /* ZFBaseWebController.m in Sources */,
 				04FD922D1A42C67D00951BC5 /* StatusBarContentViewController.m in Sources */,
 				04FD92261A42BBE300951BC5 /* StatusItemView.m in Sources */,
 				04FD92301A42E3AF00951BC5 /* ZFApplication.m in Sources */,

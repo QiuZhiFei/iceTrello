@@ -7,9 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <WebKit/WebKit.h>
+#import "ZFBaseWebController.h"
 
-@interface ViewController : NSViewController
+@interface ViewController : ZFBaseWebController
 {
     NSStatusItem *statusItem;
     NSImage *menuIcon;

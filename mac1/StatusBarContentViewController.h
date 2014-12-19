@@ -7,9 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <WebKit/WebKit.h>
+//#import <WebKit/WebKit.h>
+#import "ZFBaseWebController.h"
 
-@interface StatusBarContentViewController : NSViewController
+@interface StatusBarContentViewController : ZFBaseWebController
 
 @property (strong) IBOutlet WebView *webView;
 
