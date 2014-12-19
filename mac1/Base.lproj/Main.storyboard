@@ -721,28 +721,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="492"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yc5-H6-YQf">
-                                <rect key="frame" x="0.0" y="438" width="485" height="75"/>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="yc5-H6-YQf">
+                                <rect key="frame" x="0.0" y="452" width="485" height="40"/>
                                 <subviews>
-                                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="png-Js-fss">
-                                        <rect key="frame" x="9" y="17" width="25" height="25"/>
-                                        <buttonCell key="cell" type="help" bezelStyle="helpButton" imagePosition="above" alignment="left" borderStyle="border" imageScaling="proportionallyDown" id="Mk7-As-Ghz">
+                                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="png-Js-fss">
+                                        <rect key="frame" x="10" y="7" width="71" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="1PS-iL-BmY"/>
+                                            <constraint firstAttribute="height" constant="22" id="Xbj-ki-fsl"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="roundTextured" title="退出" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" id="Mk7-As-Ghz">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                         <connections>
-                                            <action selector="setting:" target="yTI-bC-UOd" id="6Jh-AU-Rsb"/>
+                                            <action selector="logout:" target="yTI-bC-UOd" id="0eb-GL-lr9"/>
+                                        </connections>
+                                    </button>
+                                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5cy-9G-5p5">
+                                        <rect key="frame" x="196" y="7" width="92" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="4iB-Wi-v3V"/>
+                                            <constraint firstAttribute="width" constant="92" id="jIg-lN-S0h"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="roundTextured" title="打开 trello" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" id="GYS-GH-ZS1">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="openTrello:" target="yTI-bC-UOd" id="KWN-VJ-LE3"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="png-Js-fss" firstAttribute="leading" secondItem="yc5-H6-YQf" secondAttribute="leading" constant="10" id="Rzy-Pz-4MK"/>
+                                    <constraint firstAttribute="centerY" secondItem="png-Js-fss" secondAttribute="centerY" id="VNm-ef-NXI"/>
+                                    <constraint firstAttribute="centerY" secondItem="5cy-9G-5p5" secondAttribute="centerY" id="Vyn-sf-FyD"/>
+                                    <constraint firstAttribute="centerX" secondItem="5cy-9G-5p5" secondAttribute="centerX" id="uO2-fG-ZNx"/>
+                                    <constraint firstAttribute="height" constant="40" id="xMN-Cp-xlS"/>
+                                </constraints>
                             </customView>
                             <webView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eFI-Qf-BDi">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="440"/>
                                 <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
                                     <nil key="identifier"/>
                                 </webPreferences>
                             </webView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yc5-H6-YQf" secondAttribute="trailing" constant="-5" id="0ei-mO-Lb8"/>
+                            <constraint firstItem="yc5-H6-YQf" firstAttribute="leading" secondItem="UZ9-TH-aYf" secondAttribute="leading" id="Gyc-ZS-7sU"/>
+                            <constraint firstItem="yc5-H6-YQf" firstAttribute="top" secondItem="UZ9-TH-aYf" secondAttribute="top" id="aSV-v1-Bbh"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="webView" destination="eFI-Qf-BDi" id="bgC-Su-i4S"/>

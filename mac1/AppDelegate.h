@@ -16,5 +16,7 @@
 
 - (void)openMainWindow;
 
+- (void)close;
+
 @end
 

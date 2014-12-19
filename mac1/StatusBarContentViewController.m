@@ -26,9 +26,14 @@
     [[self.webView mainFrame] loadRequest:request];
 }
 
-- (IBAction)setting:(id)sender {
+- (IBAction)openTrello:(id)sender {
     
     [[AppDelegate shared] openMainWindow];
-    
 }
+
+- (IBAction)logout:(id)sender {
+    
+    [[AppDelegate shared] close];
+}
+
 @end

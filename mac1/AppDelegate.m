@@ -43,6 +43,11 @@
     }
 }
 
+- (void)close
+{
+    [NSApp terminate:self];
+}
+
 
 + (instancetype)shared
 {
