@@ -14,7 +14,7 @@
     [super viewDidLoad];
     
     // 加载 url
-    NSURL*url=[NSURL URLWithString:@"https://trello.com"];
+    NSURL*url=[NSURL URLWithString:ICE_TRELLO_URL_STRING];
     NSURLRequest*request=[NSURLRequest requestWithURL:url];
     [[self.webView mainFrame] loadRequest:request];
 
