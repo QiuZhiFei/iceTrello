@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
         <plugIn identifier="com.apple.WebKitIBPlugin" version="6250"/>
@@ -648,54 +648,6 @@
             <point key="canvasLocation" x="39.5" y="-2"/>
         </scene>
         <!--Window Controller-->
-        <scene sceneID="R2V-B0-nI4">
-            <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="ice trello" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                    </window>
-                    <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
-                    </connections>
-                </windowController>
-                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="75" y="250"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
-            <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <webView translatesAutoresizingMaskIntoConstraints="NO" id="dXc-XR-Kdw">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                                <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
-                                    <nil key="identifier"/>
-                                </webPreferences>
-                            </webView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="dXc-XR-Kdw" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="2Fs-Cd-QUD"/>
-                            <constraint firstAttribute="bottom" secondItem="dXc-XR-Kdw" secondAttribute="bottom" id="4zJ-PI-HJR"/>
-                            <constraint firstAttribute="trailing" secondItem="dXc-XR-Kdw" secondAttribute="trailing" id="5bU-iC-E7Q"/>
-                            <constraint firstItem="dXc-XR-Kdw" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="ilk-EF-GZm"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="webView" destination="dXc-XR-Kdw" id="bhs-cM-o4R"/>
-                    </connections>
-                </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="75" y="655"/>
-        </scene>
-        <!--Window Controller-->
         <scene sceneID="WWb-YE-o26">
             <objects>
                 <windowController storyboardIdentifier="statusBarVC" id="IzV-4r-JJw" customClass="StatusBarViewController" sceneMemberID="viewController">
@@ -712,6 +664,54 @@
                 <customObject id="I5a-XU-aNC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="915" y="-88"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="cuP-YZ-ask">
+            <objects>
+                <windowController storyboardIdentifier="mainWindowVC" id="rd7-8h-fqY" customClass="NSMainWindowController" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="1cd-UI-FJX">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="245" y="301" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                    </window>
+                    <connections>
+                        <segue destination="CmU-EN-VDb" kind="relationship" relationship="window.shadowedContentViewController" id="U30-Pg-6zI"/>
+                    </connections>
+                </windowController>
+                <customObject id="6ZO-io-fUf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="738" y="559"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="myC-zg-uLA">
+            <objects>
+                <viewController id="CmU-EN-VDb" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" id="3Fk-cQ-DkA">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <webView translatesAutoresizingMaskIntoConstraints="NO" id="dxt-Du-38C">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                                    <nil key="identifier"/>
+                                </webPreferences>
+                            </webView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dxt-Du-38C" firstAttribute="top" secondItem="3Fk-cQ-DkA" secondAttribute="top" id="6R9-dm-408"/>
+                            <constraint firstAttribute="trailing" secondItem="dxt-Du-38C" secondAttribute="trailing" id="Pkf-r8-HqG"/>
+                            <constraint firstItem="dxt-Du-38C" firstAttribute="leading" secondItem="3Fk-cQ-DkA" secondAttribute="leading" id="lzt-RO-kZ6"/>
+                            <constraint firstAttribute="bottom" secondItem="dxt-Du-38C" secondAttribute="bottom" id="utC-LD-RTP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="dxt-Du-38C" id="4ne-nE-RB7"/>
+                    </connections>
+                </viewController>
+                <customObject id="wzw-gb-hg8" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="554"/>
         </scene>
         <!--Status Bar Content View Controller-->
         <scene sceneID="nBN-By-jpF">

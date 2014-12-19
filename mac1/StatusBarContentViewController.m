@@ -7,7 +7,7 @@
 //
 
 #import "StatusBarContentViewController.h"
-#import "NSStatusBarServer.h"
+#import "AppDelegate.h"
 
 @interface StatusBarContentViewController ()
 
@@ -28,7 +28,7 @@
 
 - (IBAction)setting:(id)sender {
     
-    [[[NSStatusBarServer shared] statusBarVC] hide];
+    [[AppDelegate shared] openMainWindow];
     
 }
 @end

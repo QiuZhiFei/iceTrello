@@ -12,5 +12,9 @@
 
 + (instancetype)shared;
 
+@property (nonatomic, strong) NSWindow * window;
+
+- (void)openMainWindow;
+
 @end
 

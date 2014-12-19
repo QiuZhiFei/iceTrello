@@ -9,10 +9,11 @@
 #import "AppDelegate.h"
 #import "NSStatusBarServer.h"
 #import "ZFApplication.h"
+#import "NSMainWindowController.h"
 
 @interface AppDelegate ()
 
-@property (nonatomic, strong) StatusBarViewController * statusBarVC;
+@property (nonatomic, strong) NSMainWindowController * mainWindowVC;
 
 @end
 
@@ -20,10 +21,28 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 
+    NSStoryboard * board = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.mainWindowVC = [board instantiateControllerWithIdentifier:@"mainWindowVC"];
+    self.window = self.mainWindowVC.window;
+    
+    [self openMainWindow];
+    
+    
     // status bar
     
     [NSStatusBarServer shared];
 }
+
+
+- (void)openMainWindow
+{
+    if (!self.window.isVisible) {
+        
+        [NSApp activateIgnoringOtherApps:YES];
+        [[self window] makeKeyAndOrderFront:nil];
+    }
+}
+
 
 + (instancetype)shared
 {
