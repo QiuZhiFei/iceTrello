@@ -48,7 +48,6 @@
     [NSApp terminate:self];
 }
 
-
 + (instancetype)shared
 {
     return [ZFApplication sharedApplication].delegate;
@@ -56,6 +55,14 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+}
+
+// 点击 dock 显示 app
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag
+{
+    [self openMainWindow];
+    
+    return YES;
 }
 
 @end
